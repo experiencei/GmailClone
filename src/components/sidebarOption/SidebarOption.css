@@ -35,3 +35,6 @@
 .sidebarOption:hover > p {
     display:inline;
 }
+.sidebar--active > p{
+    display:inline !important;
+}

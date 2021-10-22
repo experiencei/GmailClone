@@ -6,6 +6,8 @@ import "./SendMail.css";
 
 
 function SendMail() {
+    const { register , handleSubmit ,watch , errors } = useForm();
+
     return (
         <div className="sendMail">
             <div className="sendMail__header">
@@ -14,9 +16,11 @@ function SendMail() {
             </div>
 
             <form>
-                <input type="text" placeholder="To" className=""/>
-                <input type="text" placeholder="Subject" className=""/>
-                <input type="text" placeholder="Message..." className="sendMail__message"/>
+                <input type="text" name="to" placeholder="To" className="" ref={register({required: true})}/>
+
+                <input type="text" name="subject" placeholder="Subject" className=""/>
+
+                <input type="text" name="message" placeholder="Message..." className="sendMail__message"/>
 
                 <div className="sendMail__options">
                     <Button className="sendMail__send"

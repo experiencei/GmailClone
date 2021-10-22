@@ -39,7 +39,7 @@
     flex-direction: column;
 }
 .sendMail > form > input {
-    height: 30px;
+    height:30px;
     padding:10px;
     border: none;
     outline: none;

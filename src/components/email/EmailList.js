@@ -34,6 +34,10 @@ function EmailList() {
                      </IconButton>
                 </div>
             </div>
+
+            <div className="emailist__sections">
+                
+            </div>
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import { Checkbox , IconButton } from '@material-ui/core';
-import { ArrowDropDown, MoreVert, Redo } from '@material-ui/icons';
+import { ArrowDropDown, ChevronLeft, ChevronRight, KeyboardHide, MoreVert, Redo, Settings } from '@material-ui/icons';
 import React from 'react'
 import "./EmailList.css";
 
@@ -17,6 +17,20 @@ function EmailList() {
                      </IconButton>
                      <IconButton>
                          <MoreVert/>
+                     </IconButton>
+                </div>
+                <div className="emailist__sesttingsRight">
+                    <IconButton>
+                         <ChevronLeft/>
+                     </IconButton>
+                    <IconButton>
+                         <ChevronRight/>
+                     </IconButton>
+                     <IconButton>
+                         <KeyboardHide/>
+                     </IconButton>
+                     <IconButton>
+                         <Settings/>
                      </IconButton>
                 </div>
             </div>

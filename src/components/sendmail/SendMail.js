@@ -6,7 +6,7 @@ import "./SendMail.css";
 
 
 function SendMail() {
-    const { register , handleSubmit ,watch , errors } = useForm();
+    const { register , handleSubmit ,watch , formState: { errors } } = useForm();
     const onSubmit = (formdata) => {
 
        }
@@ -23,22 +23,23 @@ function SendMail() {
                 type="text" 
                  name="to"
                  placeholder="To"   
-                 {...register("to")}
+                 {...register("to", { required: true })}
                  />
-
-                
+                {errors.to &&  <p className="sendMail__error"> To is Required!</p>}
+    
                 <input type="text" 
                 name="subject" 
                 placeholder="Subject" 
-                {...register("subject")}
+                {...register("subject", { required: true })}
                 />
-                
+                {errors.subject &&  (<p className="sendMail__error"> Subject is Required</p>)}
 
                 <input type="text"
                  name="message" 
                  placeholder="Message..." className="sendMail__message"
-                 {...register("message")}
+                 {...register("message" , { required: true })}
                 />
+                {errors.message &&  <p className="sendMail__error">Message is Required</p>}
 
                 <div className="sendMail__options">
                     <Button className="sendMail__send"

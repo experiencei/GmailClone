@@ -4,10 +4,12 @@ import { BrowserRouter as Router , Switch , Link , Route } from 'react-router-do
 import './App.css';
 import Header from './components/header/Header';
 import Sidebar from './components/sidebar/Sidebar';
+import Mail from './components/mail/Mail';
+import EmailList from './components/email/EmailList';
 
 function App() {
   return (
-    < Router>
+    <Router>
     <div className="app">
     <Header/>
     <div className="app__body">

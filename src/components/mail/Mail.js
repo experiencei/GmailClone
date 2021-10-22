@@ -1,5 +1,5 @@
 import { IconButton } from '@material-ui/core';
-import { ArrowBack, CheckCircle, Delete, Email, Error, MoreVert, MoveToInbox, WatchLater } from '@material-ui/icons';
+import { ArrowBack, CheckCircle, Delete, Email, Error, LabelImportant, MoreVert, MoveToInbox, WatchLater } from '@material-ui/icons';
 import React from 'react'
 import { useHistory } from 'react-router';
 import "./Mail.css";

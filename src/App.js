@@ -1,5 +1,5 @@
 import React from 'react';
-import { selectUser , login ,logout } from './features/mailSlice';
+import { selectUser , login ,logout, selectSendMessageIsOPen } from './features/mailSlice';
 import { BrowserRouter as Router , Switch , Link , Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/header/Header';
@@ -7,8 +7,11 @@ import Sidebar from './components/sidebar/Sidebar';
 import Mail from './components/mail/Mail';
 import EmailList from './components/email/EmailList';
 import SendMail from './components/sendmail/SendMail';
+import { useSelector } from 'react-redux';
 
 function App() {
+ const sendMessageIsOPen = useSelector(selectSendMessageIsOPen)
+
   return (
     <Router>
     <div className="app">
@@ -26,7 +29,7 @@ function App() {
     </Switch>
     </div>
 
-    <SendMail />
+   {sendMessageIsOPen && <SendMail />}
     </div>
     </Router>
   );

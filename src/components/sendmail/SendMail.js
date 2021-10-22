@@ -6,7 +6,7 @@ import "./SendMail.css";
 
 
 function SendMail() {
-    const { register , handleSubmit ,watch , formState: { errors } } = useForm();
+    const { register , handleSubmit , watch , formState: { errors } } = useForm();
     const onSubmit = (formdata) => {
 
        }

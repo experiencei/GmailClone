@@ -1,9 +1,13 @@
 import { Avatar, IconButton } from '@material-ui/core';
 import { Apps, ArrowDropDown, Menu , Notifications, Search}   from '@material-ui/icons';
 import React from 'react'
+import { useSelector } from 'react-redux';
+import { selectUser } from '../../features/userSlice';
 import "./Header.css";
 
 function Header() {
+  const user = useSelector(selectUser)
+
     return (
         <div className="header">
               <div className="header__left">

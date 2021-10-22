@@ -14,7 +14,8 @@ function App() {
   const user = useSelector(selectUser)
   return (
     <Router>
-    <div className="app">
+{!user ? (<Login/>) : 
+  (<div className="app">
     <Header/>
     <div className="app__body">
     <Sidebar/>
@@ -30,7 +31,10 @@ function App() {
     </div>
 
    {sendMessageIsOPen && <SendMail />}
-    </div>
+    </div>)
+}
+
+    
     </Router>
   );
 }

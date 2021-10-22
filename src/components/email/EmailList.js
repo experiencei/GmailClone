@@ -1,6 +1,7 @@
 import { Checkbox , IconButton } from '@material-ui/core';
 import { ArrowDropDown, ChevronLeft, ChevronRight, Inbox, KeyboardHide, LocalOffer, MoreVert, People, Redo, Settings } from '@material-ui/icons';
 import React from 'react'
+import EmailRow from '../emailrow/EmailRow';
 import Section from '../section/Section';
 import "./EmailList.css";
 

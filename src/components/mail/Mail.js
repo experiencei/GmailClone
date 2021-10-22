@@ -4,7 +4,7 @@ import "./Mail.css";
 function Mail() {
     return (
         <div className="mail">
-            
+            <h1>What going </h1>
         </div>
     )
 }

@@ -1,11 +1,19 @@
 import { Checkbox , IconButton } from '@material-ui/core';
 import { ArrowDropDown, ChevronLeft, ChevronRight, Inbox, KeyboardHide, LocalOffer, MoreVert, People, Redo, Settings } from '@material-ui/icons';
-import React from 'react'
+import React, { useState } from 'react'
 import EmailRow from '../emailrow/EmailRow';
+import { db } from '../firebase/firebase';
 import Section from '../section/Section';
 import "./EmailList.css";
 
 function EmailList() {
+   const [ emails , setEmails] = useState([]);
+
+   useEffect(() => {
+      db
+
+   }, []);
+
     return (
         <div className="emailList">
             <div className="emailist__sesttings">

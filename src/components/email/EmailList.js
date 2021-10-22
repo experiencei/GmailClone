@@ -1,6 +1,6 @@
 import { Checkbox , IconButton } from '@material-ui/core';
 import { ArrowDropDown, ChevronLeft, ChevronRight, Inbox, KeyboardHide, LocalOffer, MoreVert, People, Redo, Settings } from '@material-ui/icons';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import EmailRow from '../emailrow/EmailRow';
 import { db } from '../firebase/firebase';
 import Section from '../section/Section';
@@ -10,7 +10,7 @@ function EmailList() {
    const [ emails , setEmails] = useState([]);
 
    useEffect(() => {
-      db.collection("emails").orderBy("timestamp", "desc").onSnapshot( snapshots => setEmails(snapshots.docs.map(doc => ({ 
+      db.collection("email").orderBy("timestamp", "desc").onSnapshot( snapshots => setEmails(snapshots.docs.map(doc => ({ 
           id : doc.id, 
           data : doc.data(),
       }))) )

@@ -6,6 +6,7 @@ import Header from './components/header/Header';
 import Sidebar from './components/sidebar/Sidebar';
 import Mail from './components/mail/Mail';
 import EmailList from './components/email/EmailList';
+import SendMail from './components/sendmail/SendMail';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
         </Route>
     </Switch>
     </div>
+
+    <SendMail />
     </div>
     </Router>
   );

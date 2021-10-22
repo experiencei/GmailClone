@@ -25,7 +25,7 @@ function SendMail() {
             <form onSubmit={handleSubmit(onSubmit)} >
 
                 <input 
-                type="text" 
+                 type="email"
                  name="to"
                  placeholder="To"   
                  {...register("to", { required: true })}

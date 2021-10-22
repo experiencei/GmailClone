@@ -1,6 +1,7 @@
 import { Checkbox , IconButton } from '@material-ui/core';
-import { ArrowDropDown, ChevronLeft, ChevronRight, KeyboardHide, MoreVert, Redo, Settings } from '@material-ui/icons';
+import { ArrowDropDown, ChevronLeft, ChevronRight, Inbox, KeyboardHide, MoreVert, Redo, Settings } from '@material-ui/icons';
 import React from 'react'
+import Section from '../section/Section';
 import "./EmailList.css";
 
 function EmailList() {
@@ -36,7 +37,7 @@ function EmailList() {
             </div>
 
             <div className="emailist__sections">
-                
+                <Section Icon={Inbox} title="Primary" color="red" selected/>
             </div>
         </div>
     )

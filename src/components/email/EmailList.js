@@ -10,7 +10,10 @@ function EmailList() {
    const [ emails , setEmails] = useState([]);
 
    useEffect(() => {
-      db
+      db.collection("emails").orderBy("timestamp", "desc").onSnapshot( snapshots => setEmails(snapshots.docs.map(doc => ({ 
+          id : doc.id, 
+          data : doc.data(),
+      }))) )
 
    }, []);
 

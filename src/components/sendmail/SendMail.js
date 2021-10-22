@@ -1,5 +1,6 @@
 import { Button } from '@material-ui/core';
 import { Close } from '@material-ui/icons';
+import{ useForm } from "react-hook-form";
 import React from 'react';
 import "./SendMail.css";
 
@@ -13,9 +14,9 @@ function SendMail() {
             </div>
 
             <form>
-                <input type="text" className=""/>
-                <input type="text" className=""/>
-                <input type="text" className=""/>
+                <input type="text" placeholder="To" className=""/>
+                <input type="text" placeholder="Subject" className=""/>
+                <input type="text" placeholder="Message..." className="sendMail__message"/>
 
                 <div className="sendMail__options">
                     <Button className="sendMail__send"

@@ -44,7 +44,12 @@ function EmailList() {
             </div>
 
             <div className="emailist__list">
-                <EmailRow/>
+                <EmailRow
+                    title="Wow Experience"
+                     subject="Hey gurus in the house"
+                     description="this is a house"
+                     time="10pm"
+                />
             </div>
         </div>
     )

@@ -7,7 +7,7 @@ export const mailSlice = createSlice({
     sendMessageIsOPen : false,
   },
   reducers: {
-    selectedMail : ( state , action )=>{
+    selectMail : ( state , action )=>{
        state.selectedMail = action.payload
     },
     openSendMessage: state => {
@@ -20,7 +20,7 @@ export const mailSlice = createSlice({
 });
 
 export const { openSendMessage , closeSendMessage} = mailSlice.actions;
-export const selectMail = (state) => state.mail.selectedMail;
+export const selectOpenMail = (state) => state.mail.selectedMail;
 export const selectSendMessageIsOPen = (state) => state.mail.sendMessageIsOPen;
 
 

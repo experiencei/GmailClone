@@ -1,5 +1,5 @@
-import { IconButton } from '@material-ui/core';
-import { ArrowDropDown, Menu , Search}   from '@material-ui/icons';
+import { Avatar, IconButton } from '@material-ui/core';
+import { Apps, ArrowDropDown, Menu , Notifications, Search}   from '@material-ui/icons';
 import React from 'react'
 import "./Header.css";
 
@@ -21,7 +21,13 @@ function Header() {
                      <ArrowDropDown className="header__inputCaret"/>
               </div>
               <div className="header__right">
-
+                 <IconButton>
+                     <Apps/>
+                 </IconButton>
+                 <IconButton>
+                     <Notifications/>
+                 </IconButton>
+                 <Avatar/>
               </div>
         </div>
     )

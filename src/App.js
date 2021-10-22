@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import {  login ,logout, selectSendMessageIsOPen } from './features/mailSlice';
-import {  selectUser  } from './features/userSlice';
+import {  selectSendMessageIsOPen } from './features/mailSlice';
+import {  selectUser , login  } from './features/userSlice';
 import { BrowserRouter as Router , Switch , Link , Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/header/Header';

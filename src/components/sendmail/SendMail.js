@@ -37,7 +37,7 @@ function SendMail() {
                 placeholder="Subject" 
                 {...register("subject", { required: true })}
                 />
-                {errors.subject &&  (<p className="sendMail__error"> Subject is Required</p>)}
+                {errors.subject &&  (<p className="sendMail__error"> Subject isRequired</p>)}
 
                 <input type="text"
                  name="message" 

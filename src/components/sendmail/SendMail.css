@@ -24,3 +24,17 @@
     color: whitesmoke;
     font-size: 13px;
 }
+
+.sendMail__send {
+    background-color: #3079ed !important;
+    text-transform: capitalize !important;
+    margin: 15px !important;
+}
+.sendMail__close {
+    cursor: pointer;
+}
+.sendMail > form {
+    display: flex ;
+    flex: 1;
+    flex-direction: column;
+}

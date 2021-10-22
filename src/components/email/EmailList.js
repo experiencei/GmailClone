@@ -50,6 +50,12 @@ function EmailList() {
                      description="this is a house"
                      time="10pm"
                 />
+                <EmailRow
+                    title="Wow Experience"
+                     subject="Hey gurus in the house"
+                     description="this is a house"
+                     time="10pm"
+                />
             </div>
         </div>
     )

@@ -13,7 +13,7 @@ function Sidebar() {
     return (
         <div className="sidebar">
             <Button    className="sidebar__compose" startIcon={ <Add fontSize="large"/>}
-             onClick={() => dispatch(openSendMessage)} 
+             onClick={() => dispatch(openSendMessage())} 
             >Compose</Button>
 
             <SidebarOption Icon={Inbox} title="Inbox" number={54}selected={true}/>

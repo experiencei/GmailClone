@@ -17,6 +17,8 @@ function Login() {
                 email : user.email,
                 photoUrl: user.photoUrl,
             }))
+       }).catch(error => {
+           alert(error.message)
        })
    }
 

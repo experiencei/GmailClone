@@ -3,9 +3,13 @@ import { createSlice } from '@reduxjs/toolkit';
 export const mailSlice = createSlice({
   name: 'mail',
   initialState : {
+    selectedMail:null,
     sendMessageIsOPen : false,
   },
   reducers: {
+    selectedMail : ( state , action )=>{
+       state.selectedMail = action.payload
+    },
     openSendMessage: state => {
       state.sendMessageIsOPen = true;
     },

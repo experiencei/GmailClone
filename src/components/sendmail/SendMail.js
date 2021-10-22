@@ -5,13 +5,17 @@ import React from 'react';
 import "./SendMail.css";
 import { useDispatch } from 'react-redux';
 import { closeSendMessage } from '../../features/mailSlice';
+import { db } from '../firebase/firebase';
 
 
 function SendMail() {
     const { register , handleSubmit , watch , formState: { errors } } = useForm();
-    const dispatch = useDispatch()
-    const onSubmit = (formdata) => {
+    const dispatch = useDispatch();
 
+    const onSubmit = (formdata) => {
+         db.collection("email").add({
+             to : 
+         })
        }
     return (
         <div className="sendMail">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { selectUser , login ,logout } from './features/userSlice';
+import { selectUser , login ,logout } from './features/mailSlice';
 import { BrowserRouter as Router , Switch , Link , Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/header/Header';

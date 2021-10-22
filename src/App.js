@@ -11,7 +11,7 @@ import { useSelector } from 'react-redux';
 
 function App() {
  const sendMessageIsOPen = useSelector(selectSendMessageIsOPen)
-
+  const user = useSelector(selectUser)
   return (
     <Router>
     <div className="app">
